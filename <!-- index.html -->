@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        body {
+            background-color: #5c6bc0; /* Cor azul meio cinza (Slate Blue) */
+            color: #ffffff; /* Cor do texto em branco para dar contraste */
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header {
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin-bottom: 5px;
+        }
+        h2 {
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+    </header>
+
+    <main>
+        <h2>Meu primeiro post</h2>
+        <p>Por: Maria Eduarda</p>
+        <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+    </main>
+
+</body>
+</html>
