@@ -171,38 +171,29 @@ estão transformando a exploração e a proteção dos oceanos.
 
 <div class="card">
 <h3>Robôs Submarinos</h3>
-<p>
-Exploram grandes profundidades e ajudam cientistas a estudar áreas
-que seriam difíceis para humanos alcançarem.
-</p>
+<p>Exploram grandes profundidades e ajudam cientistas.</p>
 </div>
 
 <div class="card">
 <h3>Satélites</h3>
-<p>
-Monitoram os oceanos, o clima e ajudam na previsão de tempestades.
-</p>
+<p>Monitoram oceanos, clima e tempestades.</p>
 </div>
 
 <div class="card">
 <h3>Drones Marítimos</h3>
-<p>
-Coletam informações sobre a qualidade da água e a vida marinha.
-</p>
+<p>Coletam dados da água e da vida marinha.</p>
 </div>
 
 <div class="card">
 <h3>Energia Eólica Offshore</h3>
-<p>
-Produz energia limpa utilizando a força dos ventos no mar.
-</p>
+<p>Produz energia limpa com ventos do mar.</p>
 </div>
 
 </div>
 </section>
 
 <section id="galeria">
-<h2>🖼️ Galeria Tecnológica</h2>
+<h2>🖼️ Galeria de Fotos</h2>
 
 <div class="galeria">
 
@@ -220,17 +211,9 @@ Produz energia limpa utilizando a força dos ventos no mar.
 <section id="curiosidades">
 <h2>💡 Curiosidades</h2>
 
-<div class="curiosidade">
-🌍 Mais de 70% da superfície terrestre é coberta por oceanos.
-</div>
-
-<div class="curiosidade">
-🤖 Alguns robôs submarinos conseguem trabalhar por meses sem retornar à superfície.
-</div>
-
-<div class="curiosidade">
-🛰️ Satélites ajudam a monitorar mudanças climáticas e correntes marítimas.
-</div>
+<div class="curiosidade">🌍 Mais de 70% do planeta é coberto por oceanos.</div>
+<div class="curiosidade">🤖 Robôs submarinos funcionam por meses sem parar.</div>
+<div class="curiosidade">🛰️ Satélites ajudam a prever o clima global.</div>
 
 </section>
 
@@ -239,17 +222,35 @@ Produz energia limpa utilizando a força dos ventos no mar.
 
 <div class="quiz">
 
-<p><b>1. Qual tecnologia é usada para explorar grandes profundidades?</b></p>
-
+<p><b>1. Qual tecnologia explora grandes profundidades?</b></p>
 <input type="radio" name="q1" value="0"> Bicicleta<br>
 <input type="radio" name="q1" value="1"> Robô Submarino<br>
-<input type="radio" name="q1" value="0"> Patins<br><br>
+<input type="radio" name="q1" value="0"> Skate<br><br>
 
-<p><b>2. O que os satélites ajudam a monitorar?</b></p>
-
+<p><b>2. O que satélites monitoram?</b></p>
 <input type="radio" name="q2" value="1"> Oceanos e clima<br>
-<input type="radio" name="q2" value="0"> Apenas estradas<br>
+<input type="radio" name="q2" value="0"> Apenas ruas<br>
 <input type="radio" name="q2" value="0"> Apenas prédios<br><br>
+
+<p><b>3. Qual coleta dados no mar?</b></p>
+<input type="radio" name="q3" value="1"> Drone Marítimo<br>
+<input type="radio" name="q3" value="0"> Carro<br>
+<input type="radio" name="q3" value="0"> Bicicleta<br><br>
+
+<p><b>4. Energia eólica offshore usa:</b></p>
+<input type="radio" name="q4" value="1"> Ventos do mar<br>
+<input type="radio" name="q4" value="0"> Gasolina<br>
+<input type="radio" name="q4" value="0"> Carvão<br><br>
+
+<p><b>5. Benefício da tecnologia no mar:</b></p>
+<input type="radio" name="q5" value="1"> Proteger oceanos<br>
+<input type="radio" name="q5" value="0"> Poluir mais<br>
+<input type="radio" name="q5" value="0"> Parar pesquisas<br><br>
+
+<p><b>6. Robôs submarinos ajudam a:</b></p>
+<input type="radio" name="q6" value="1"> Explorar oceanos profundos<br>
+<input type="radio" name="q6" value="0"> Construir casas<br>
+<input type="radio" name="q6" value="0"> Plantar árvores<br><br>
 
 <button onclick="corrigir()">Ver Resultado</button>
 
@@ -259,28 +260,27 @@ Produz energia limpa utilizando a força dos ventos no mar.
 </section>
 
 <footer>
-🌊 Projeto Educativo - Tecnologia no Mar: Inovação que Navega
+🌊 Projeto Educativo - Tecnologia no Mar
 </footer>
 
 <script>
 function corrigir(){
-
 let pontos = 0;
 
-let q1 = document.querySelector('input[name="q1"]:checked');
-let q2 = document.querySelector('input[name="q2"]:checked');
+for(let i = 1; i <= 6; i++){
+let resposta = document.querySelector('input[name="q'+i+'"]:checked');
 
-if(!q1 || !q2){
+if(!resposta){
 document.getElementById("resultado").innerHTML =
 "Responda todas as perguntas!";
 return;
 }
 
-pontos += Number(q1.value);
-pontos += Number(q2.value);
+pontos += Number(resposta.value);
+}
 
 document.getElementById("resultado").innerHTML =
-"Você fez " + pontos + " de 2 pontos! 🎉";
+"Você fez " + pontos + " de 6 pontos! 🎉";
 }
 </script>
 
