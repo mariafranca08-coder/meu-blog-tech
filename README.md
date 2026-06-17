@@ -135,6 +135,25 @@ cursor:pointer;
 .like{background:#00d4ff;}
 .dislike{background:#ff4d4d;}
 
+.comment-box{
+margin-top:10px;
+}
+
+.comment-box input{
+width:100%;
+padding:8px;
+border-radius:8px;
+border:none;
+margin-top:8px;
+outline:none;
+}
+
+.comment-list{
+margin-top:8px;
+font-size:14px;
+opacity:0.9;
+}
+
 .hidden{
 display:none !important;
 }
@@ -177,14 +196,21 @@ margin-top:40px;
 <div class="post-content">
 <h3>🤖 Robôs Submarinos</h3>
 <p>
-Os robôs submarinos são equipamentos desenvolvidos para explorar regiões profundas do oceano onde a presença humana não é possível devido à pressão extrema e à ausência de luz natural. Eles são equipados com câmeras, sensores avançados e sistemas de coleta de dados que permitem analisar o ambiente marinho com precisão.
+Os robôs submarinos são equipamentos desenvolvidos para explorar regiões profundas do oceano onde a presença humana não é possível devido à pressão extrema e à ausência de luz natural.
 <br><br>
-Essas tecnologias são utilizadas em pesquisas científicas, exploração de recursos naturais e estudos sobre ecossistemas marinhos ainda pouco conhecidos.
+Eles são usados em pesquisas científicas, exploração de recursos e estudos do fundo do mar.
 </p>
+
 <div class="actions">
 <button class="like" onclick="like(this)">👍 <span>0</span></button>
 <button class="dislike" onclick="dislike(this)">👎 <span>0</span></button>
 </div>
+
+<div class="comment-box">
+<input type="text" placeholder="Escreva um comentário..." onkeydown="addComment(event,this)">
+<div class="comment-list"></div>
+</div>
+
 </div>
 </div>
 
@@ -194,14 +220,21 @@ Essas tecnologias são utilizadas em pesquisas científicas, exploração de rec
 <div class="post-content">
 <h3>🛰️ Satélites Oceânicos</h3>
 <p>
-Satélites em órbita da Terra desempenham um papel fundamental no monitoramento dos oceanos. Eles coletam informações sobre temperatura da superfície, correntes marítimas e padrões climáticos em escala global.
+Satélites monitoram temperatura do oceano, clima e correntes marítimas em escala global.
 <br><br>
-Esses dados são essenciais para previsões meteorológicas, estudos ambientais e prevenção de desastres naturais, como tempestades e furacões.
+Esses dados ajudam na previsão de tempestades e mudanças climáticas.
 </p>
+
 <div class="actions">
 <button class="like" onclick="like(this)">👍 <span>0</span></button>
 <button class="dislike" onclick="dislike(this)">👎 <span>0</span></button>
 </div>
+
+<div class="comment-box">
+<input type="text" placeholder="Escreva um comentário..." onkeydown="addComment(event,this)">
+<div class="comment-list"></div>
+</div>
+
 </div>
 </div>
 
@@ -211,14 +244,21 @@ Esses dados são essenciais para previsões meteorológicas, estudos ambientais 
 <div class="post-content">
 <h3>🌊 Sensores Marinhos</h3>
 <p>
-Sensores instalados no oceano são utilizados para coletar dados ambientais como temperatura, salinidade, nível de poluição e movimentação das águas. Esses equipamentos funcionam de forma contínua e enviam informações em tempo real para centros de pesquisa.
+Sensores coletam dados como temperatura, salinidade e poluição diretamente do oceano em tempo real.
 <br><br>
-Essas medições ajudam cientistas a entender melhor a saúde dos oceanos e seus impactos no clima global.
+Eles ajudam cientistas a entender melhor o ambiente marinho.
 </p>
+
 <div class="actions">
 <button class="like" onclick="like(this)">👍 <span>0</span></button>
 <button class="dislike" onclick="dislike(this)">👎 <span>0</span></button>
 </div>
+
+<div class="comment-box">
+<input type="text" placeholder="Escreva um comentário..." onkeydown="addComment(event,this)">
+<div class="comment-list"></div>
+</div>
+
 </div>
 </div>
 
@@ -228,14 +268,21 @@ Essas medições ajudam cientistas a entender melhor a saúde dos oceanos e seus
 <div class="post-content">
 <h3>🚢 Navios Inteligentes</h3>
 <p>
-Navios modernos utilizam sistemas de inteligência artificial para otimizar rotas, aumentar a segurança e reduzir o consumo de combustível. Esses sistemas analisam dados em tempo real para evitar acidentes e melhorar a eficiência da navegação.
+Navios modernos usam inteligência artificial para otimizar rotas e aumentar a segurança no transporte marítimo.
 <br><br>
-A automação no transporte marítimo representa um avanço importante para a logística global e para a segurança no mar.
+Isso reduz custos e melhora a eficiência.
 </p>
+
 <div class="actions">
 <button class="like" onclick="like(this)">👍 <span>0</span></button>
 <button class="dislike" onclick="dislike(this)">👎 <span>0</span></button>
 </div>
+
+<div class="comment-box">
+<input type="text" placeholder="Escreva um comentário..." onkeydown="addComment(event,this)">
+<div class="comment-list"></div>
+</div>
+
 </div>
 </div>
 
@@ -245,14 +292,21 @@ A automação no transporte marítimo representa um avanço importante para a lo
 <div class="post-content">
 <h3>🔋 Energia das Ondas</h3>
 <p>
-A energia das ondas é uma forma de energia renovável que aproveita o movimento natural do mar para gerar eletricidade. Essa tecnologia utiliza estruturas instaladas no oceano para converter o movimento das ondas em energia elétrica.
+A energia das ondas transforma o movimento do mar em eletricidade limpa e renovável.
 <br><br>
-Esse tipo de fonte energética é estudado como alternativa sustentável para reduzir a dependência de combustíveis fósseis.
+É uma alternativa sustentável para o futuro.
 </p>
+
 <div class="actions">
 <button class="like" onclick="like(this)">👍 <span>0</span></button>
 <button class="dislike" onclick="dislike(this)">👎 <span>0</span></button>
 </div>
+
+<div class="comment-box">
+<input type="text" placeholder="Escreva um comentário..." onkeydown="addComment(event,this)">
+<div class="comment-list"></div>
+</div>
+
 </div>
 </div>
 
@@ -278,17 +332,30 @@ let span = btn.querySelector("span");
 span.innerText = Number(span.innerText) + 1;
 }
 
-document.getElementById("pesquisa").addEventListener("input", function(){
+function addComment(event,input){
+if(event.key === "Enter"){
+let text = input.value.trim();
+if(text === "") return;
 
+let list = input.nextElementSibling;
+
+let div = document.createElement("div");
+div.innerText = "💬 " + text;
+
+list.appendChild(div);
+
+input.value = "";
+}
+}
+
+document.getElementById("pesquisa").addEventListener("input", function(){
 let texto = this.value.toLowerCase();
 
 document.querySelectorAll(".post").forEach(post=>{
-post.classList.toggle(
-"hidden",
+post.classList.toggle("hidden",
 !post.innerText.toLowerCase().includes(texto)
 );
 });
-
 });
 
 </script>
