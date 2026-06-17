@@ -4,11 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ocean Tech Blog</title>
+<title>Oceano Inteligente</title>
 
 <style>
 
-/* ===== BASE ===== */
 *{
 margin:0;
 padding:0;
@@ -23,7 +22,6 @@ color:white;
 transition:0.4s;
 }
 
-/* ===== MODO ESCURO ===== */
 body.dark{
 background:#0b0b0b;
 color:#eaeaea;
@@ -51,24 +49,6 @@ text-decoration:none;
 font-weight:bold;
 }
 
-.top-blog{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 10%;
-flex-wrap:wrap;
-gap:15px;
-background:#00152d;
-}
-
-#pesquisa{
-padding:10px 15px;
-border-radius:20px;
-border:none;
-width:250px;
-}
-
-/* ===== BOTÃO LUA ===== */
 .lua-btn{
 position:fixed;
 top:20px;
@@ -81,11 +61,35 @@ cursor:pointer;
 font-size:22px;
 background:#111;
 color:white;
-box-shadow:0 0 10px rgba(255,255,255,0.3);
 z-index:2000;
 }
 
-/* ===== POSTS ===== */
+.top-title{
+text-align:center;
+padding:20px;
+background:#00152d;
+}
+
+.top-title h1{
+color:#00d4ff;
+font-size:2.2rem;
+text-shadow:0 0 10px #00d4ff;
+}
+
+.search-box{
+text-align:center;
+padding:15px;
+}
+
+#pesquisa{
+padding:10px 15px;
+width:300px;
+max-width:90%;
+border:none;
+border-radius:20px;
+outline:none;
+}
+
 .posts{
 padding:50px 10%;
 display:grid;
@@ -115,10 +119,6 @@ object-fit:cover;
 padding:15px;
 }
 
-.post h3{
-margin-bottom:10px;
-}
-
 .actions{
 display:flex;
 justify-content:space-between;
@@ -135,13 +135,10 @@ cursor:pointer;
 .like{background:#00d4ff;}
 .dislike{background:#ff4d4d;}
 
-/* ===== HERO ===== */
-.hero{
-padding:80px 10%;
-text-align:center;
+.hidden{
+display:none !important;
 }
 
-/* ===== FOOTER ===== */
 footer{
 text-align:center;
 padding:30px;
@@ -154,38 +151,36 @@ margin-top:40px;
 
 <body>
 
-<!-- BOTÃO LUA -->
 <button class="lua-btn" onclick="toggleTema()">🌙</button>
 
 <header>
 <nav>
-<a href="#">Início</a>
+<a href="#inicio">Início</a>
 <a href="#posts">Posts</a>
 </nav>
 </header>
 
-<div class="top-blog">
-<div>
-<h1>🌊 Ocean Tech Blog</h1>
+<div class="top-title">
+<h1>🌊 Oceano Inteligente</h1>
 <p>Tecnologia e inovação nos oceanos</p>
 </div>
 
+<div class="search-box">
 <input type="text" id="pesquisa" placeholder="Pesquisar posts...">
 </div>
 
-<section class="hero">
-<h1>Tecnologia no Mar 🌊</h1>
-<p>Robôs submarinos, IA oceânica, sensores e exploração dos oceanos</p>
-</section>
-
-<!-- POSTS -->
 <section class="posts" id="posts">
 
+<!-- 1 -->
 <div class="post">
-<img src="pexels-mehmetography-2153058108-33299503.jpg">
+<img src="https://images.unsplash.com/photo-1582967788606-a171c1080cb0?auto=format&fit=crop&w=800&q=80">
 <div class="post-content">
 <h3>🤖 Robôs Submarinos</h3>
-<p>Exploram as profundezas do oceano onde humanos não conseguem chegar.</p>
+<p>
+Os robôs submarinos são equipamentos desenvolvidos para explorar regiões profundas do oceano onde a presença humana não é possível devido à pressão extrema e à ausência de luz natural. Eles são equipados com câmeras, sensores avançados e sistemas de coleta de dados que permitem analisar o ambiente marinho com precisão.
+<br><br>
+Essas tecnologias são utilizadas em pesquisas científicas, exploração de recursos naturais e estudos sobre ecossistemas marinhos ainda pouco conhecidos.
+</p>
 <div class="actions">
 <button class="like" onclick="like(this)">👍 <span>0</span></button>
 <button class="dislike" onclick="dislike(this)">👎 <span>0</span></button>
@@ -193,11 +188,16 @@ margin-top:40px;
 </div>
 </div>
 
+<!-- 2 -->
 <div class="post">
-<img src="pexels-mehmetography-2153058108-33299503.jpg">
+<img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80">
 <div class="post-content">
 <h3>🛰️ Satélites Oceânicos</h3>
-<p>Monitoram correntes marítimas, clima e mudanças no oceano.</p>
+<p>
+Satélites em órbita da Terra desempenham um papel fundamental no monitoramento dos oceanos. Eles coletam informações sobre temperatura da superfície, correntes marítimas e padrões climáticos em escala global.
+<br><br>
+Esses dados são essenciais para previsões meteorológicas, estudos ambientais e prevenção de desastres naturais, como tempestades e furacões.
+</p>
 <div class="actions">
 <button class="like" onclick="like(this)">👍 <span>0</span></button>
 <button class="dislike" onclick="dislike(this)">👎 <span>0</span></button>
@@ -205,11 +205,16 @@ margin-top:40px;
 </div>
 </div>
 
+<!-- 3 -->
 <div class="post">
-<img src="pexels-mehmetography-2153058108-33299503.jpg">
+<img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80">
 <div class="post-content">
-<h3>🌊 Sensores Submarinos</h3>
-<p>Captam dados da água como temperatura e poluição.</p>
+<h3>🌊 Sensores Marinhos</h3>
+<p>
+Sensores instalados no oceano são utilizados para coletar dados ambientais como temperatura, salinidade, nível de poluição e movimentação das águas. Esses equipamentos funcionam de forma contínua e enviam informações em tempo real para centros de pesquisa.
+<br><br>
+Essas medições ajudam cientistas a entender melhor a saúde dos oceanos e seus impactos no clima global.
+</p>
 <div class="actions">
 <button class="like" onclick="like(this)">👍 <span>0</span></button>
 <button class="dislike" onclick="dislike(this)">👎 <span>0</span></button>
@@ -217,11 +222,16 @@ margin-top:40px;
 </div>
 </div>
 
+<!-- 4 -->
 <div class="post">
-<img src="pexels-mehmetography-2153058108-33299503.jpg">
+<img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=800&q=80">
 <div class="post-content">
 <h3>🚢 Navios Inteligentes</h3>
-<p>Usam inteligência artificial para navegação mais segura.</p>
+<p>
+Navios modernos utilizam sistemas de inteligência artificial para otimizar rotas, aumentar a segurança e reduzir o consumo de combustível. Esses sistemas analisam dados em tempo real para evitar acidentes e melhorar a eficiência da navegação.
+<br><br>
+A automação no transporte marítimo representa um avanço importante para a logística global e para a segurança no mar.
+</p>
 <div class="actions">
 <button class="like" onclick="like(this)">👍 <span>0</span></button>
 <button class="dislike" onclick="dislike(this)">👎 <span>0</span></button>
@@ -229,11 +239,16 @@ margin-top:40px;
 </div>
 </div>
 
+<!-- 5 -->
 <div class="post">
-<img src="pexels-mehmetography-2153058108-33299503.jpg">
+<img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=800&q=80">
 <div class="post-content">
 <h3>🔋 Energia das Ondas</h3>
-<p>Transforma o movimento do mar em energia limpa e renovável.</p>
+<p>
+A energia das ondas é uma forma de energia renovável que aproveita o movimento natural do mar para gerar eletricidade. Essa tecnologia utiliza estruturas instaladas no oceano para converter o movimento das ondas em energia elétrica.
+<br><br>
+Esse tipo de fonte energética é estudado como alternativa sustentável para reduzir a dependência de combustíveis fósseis.
+</p>
 <div class="actions">
 <button class="like" onclick="like(this)">👍 <span>0</span></button>
 <button class="dislike" onclick="dislike(this)">👎 <span>0</span></button>
@@ -244,38 +259,36 @@ margin-top:40px;
 </section>
 
 <footer>
-🌊 Ocean Tech Blog - Tecnologia no Mar
+🌊 Oceano Inteligente
 </footer>
 
 <script>
 
-/* ===== TEMA LUA ===== */
 function toggleTema(){
 document.body.classList.toggle("dark");
 }
 
-/* ===== LIKE ===== */
 function like(btn){
 let span = btn.querySelector("span");
 span.innerText = Number(span.innerText) + 1;
 }
 
-/* ===== DISLIKE ===== */
 function dislike(btn){
 let span = btn.querySelector("span");
 span.innerText = Number(span.innerText) + 1;
 }
 
-/* ===== PESQUISA ===== */
-document.getElementById("pesquisa").addEventListener("keyup", function(){
+document.getElementById("pesquisa").addEventListener("input", function(){
+
 let texto = this.value.toLowerCase();
 
 document.querySelectorAll(".post").forEach(post=>{
-post.style.display =
-post.innerText.toLowerCase().includes(texto)
-? "block"
-: "none";
+post.classList.toggle(
+"hidden",
+!post.innerText.toLowerCase().includes(texto)
+);
 });
+
 });
 
 </script>
